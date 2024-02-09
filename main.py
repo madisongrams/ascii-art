@@ -32,11 +32,8 @@ def open_image(file_name='blackbird.jpg'):
   width = im.width
   height = im.height
 
-  print("old size", width, " x ", height)
-
   newWidth = 70
   newHeight = round(newWidth * (height / width))
-  print("new size", newWidth, " x ", newHeight)
   return im.resize((newWidth, newHeight))
 
 
